@@ -6,7 +6,7 @@ public class myClass {
     }
     public static void main(String args[])
     {
-        int a = 60, b = 60 , sum;
+        int a = 40, b = 60 , sum;
         sum = a + b;
         System.out.println("The sum of two numbers is: "+sum);
     }
