@@ -1,42 +1,31 @@
 import java.util.Scanner;
 
 public class HW2 {
-
-    public static void homeWorkTask(int a) {
-        a = 555;
-        int sumOfThree = 5 + 5 + 5;
+    static void homeWorkTask(int A) {
+        int sum = ((A % 10) + ((A / 10) % 10) + ((A / 100) % 10));
+        System.out.println(sum);
     }
-
-    public static void homeWorkTask(String name, String lastname) {
-        name = "John";
-        lastname = "Smith";
+    static void homeWorkTask(String name, String lastname) {
         String fullName = name + lastname;
+        int lengthOfFullName = fullName.length();
+        System.out.println(lengthOfFullName);
     }
+    static void homeWorkTask() {
+        Scanner userInput = new Scanner(System.in);
+        System.out.println("Please provide the number: ");
+        int number = userInput.nextInt();
 
-    public static void homeWorkTask(boolean c, boolean d) {
-        c = true;
-        d = false;
-    }
-
-    public static void main(String[] args) {
-        int sumOfThree = 5 + 5 + 5;
-        System.out.println("Task 1: sumOfThreeNumbers = " + sumOfThree);
-
-        String fullName = "John Smith";
-        System.out.println("Task 2: fullNameLength = " + fullName.length());
-
-        Scanner s = new Scanner(System.in);
-        System.out.println("Task 3: Enter any number:");
-        int X = s.nextInt();
-        if (X > 0) {
-            System.out.println("true");
+        if (number > 0) {
+            System.out.println("Your number is bigger than - 0");
+        } else if (number == 0) {
+            System.out.println("Your number is - 0 ");
         } else {
-            System.out.println("false");
+            System.out.println("Your number is less than - 0 ");
         }
     }
+    public static void main(String args[]) {
+        homeWorkTask(123);
+        homeWorkTask("John", "Smith");
+        homeWorkTask();
+    }
 }
-
-
-
-
-
