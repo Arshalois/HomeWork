@@ -11,10 +11,9 @@ public class PhoneNumber {
             System.out.println(phone + " is incorrect");
         }
     }
-
     public static void main(String[] args) {
-        checkNumber ("+380682056196");
-        checkNumber ("+8230682056196");
+        checkNumber("+380682056196");
+        checkNumber("+8230682056196");
     }
 }
 
