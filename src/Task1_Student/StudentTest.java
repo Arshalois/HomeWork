@@ -9,6 +9,13 @@ import javax.naming.Name;
 
 public class StudentTest {
 
+    /*public static int averageScore(int averGrade1, int averGrade2, int averGrade3) {
+        int average = (averGrade1 + averGrade2 + averGrade3) / 3;
+        return average;
+    }
+
+     */
+
     public static void main(String[] args) {
         Student s1 = new Student(1, "Johnny", "Depp", "1st grade student", 1.0, 2.0, 6.0);
 
